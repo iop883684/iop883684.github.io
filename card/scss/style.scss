@@ -1,0 +1,90 @@
+@import "compass/css3";
+
+$color1: #ffffff;
+$color2: #1cff94;
+$color3: #1d2123;
+
+.xmas {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background: url('http://craftedbygc.com/images/xmas-large.jpg') no-repeat 0 0 / cover;
+
+	.to {
+		position: absolute;
+		top: 30px;
+		width: 100%;
+		text-align: center;
+		z-index: 3;
+
+		div {
+			font-family: "quimby-mayoral", sans-serif;
+			color: $color1;
+			font-size: 40px;
+			line-height: 0.5em;
+			margin-bottom: 5px;
+		}
+
+		.to-name {
+			font-size: 24px;
+		}
+
+		.client-logo {
+			display: block;
+			width: auto;
+			max-height: 100px;
+			max-width: 250px;
+			margin: 10px auto 0;
+		}
+	}
+
+	// The graphic
+	.xmas-message {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: 2;
+		@include translate(-50%, -50%);
+		width: calc(90% - 6rem);
+		height: calc(100% - 12rem);
+		margin: 0 auto;
+		background: url(http://craftedbygc.com/images/merryxmas.png) no-repeat 50% 50% / contain;
+	}
+
+	.from {
+		position: absolute;
+		bottom: 40px;
+		width: 100%;
+		z-index: 3;
+		text-align: center;
+
+		div {
+			font-family: "quimby-mayoral", sans-serif;
+			color: $color1;
+			font-size: 40px;
+			margin-bottom: 10px;
+		}
+
+		.gc-link {
+			display: inline-block;
+        font-family: "brandon-grotesque", sans-serif;
+			font-size: 24px;
+        color: $color1;
+			transition: 400ms ease;
+        text-decoration: none;
+        text-transform: uppercase;
+      
+			&:hover {
+				color: $color2;
+			}
+		}
+	}
+	
+	// Let it snow!
+	#xmas {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		z-index: 2;
+	}
+}

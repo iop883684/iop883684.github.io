@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Delius+Swash+Caps');
+#clockdiv {
+  font-family: 'Delius Swash Caps', cursive;
+  animation-timing-function:linear;
+  position: absolute;
+  width: 1000px;
+  width: 100%;
+  top:70%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 50px;
+}
+.inner {
+  display:inline-block;
+  border-radius: 0px;
+  color: #fff;
+  padding: 15px;
+  width: 80px;
+  height: 80px;
+  text-shadow: 1px 1px 10px #ff0b;
+}
+.small {
+  font-size: 15px;
+  font-weight: bold;
+}
+.headingup {
+  color: #fff;
+  display:inline-block;
+}
+.headingdown {
+  display:inline-block;
+  color: #fff;
+  font-size: 
+}
+
+
+@keyframes snow {
+ 0% {background-position: 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@media (max-width:800px){
+  .headingup, .headindown {
+    display: block;
+  }
+}

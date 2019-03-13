@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Block status</title>
+
+
+	<script src="lib/jquery.min.js"></script>
+	<link href="lib/toastr.min.css" rel="stylesheet"/>
+	<script src="lib/toastr.min.js"></script>
+	<script src="main.js"></script>
+
+	<style>
+
+	.notie-container {
+		box-shadow: none;
+	}
+
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+
+	th, td {
+		padding: 10px;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	/* Create two equal columns that floats next to each other */
+	.column1 {
+		float: left;
+		width:480px;
+		padding: 10px;
+
+	}
+
+	.column2 {
+		float: left;
+		width: calc(100% - 480px);
+		padding: 10px;
+
+	}
+
+	.divlog {
+		float: left;
+		width: 440px;
+		height: 260px;
+		overflow-y: scroll;
+	}
+
+
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+</style>
+
+
+</head>
+
+
+
+<body style="width:100%">
+
+	<div class="row">
+
+		<div class="column1"  >
+
+			<div id="data"></div>
+			<br>
+			<div class="divlog">
+
+				<font size="3">
+
+					<label>Load Status: </label> <label id="status"></label> 
+					<br>
+					<label>Time since last block split: </label> <font color="#009933"><label id="web_time"></label> </font>
+					<br>
+					<label><b>Event log: </b></label> <label id="message"></label> 
+					
+
+				</font>
+			</div>
+		</div>
+
+
+
+		<div class="column2">
+
+			<div id="commandInfo">
+				<p>Order: <p>
+
+					<input type="text" id='inputApiId' placeholder="Api Id" size="8">
+					<input type="text" id='inputApiKey' placeholder="Api Key" size="34">
+					<button class="button" onclick="setApiKey()">Set Api Info</button><br>
+					<div id="orderList">
+						 <table border='1|1'>
+				            <tr>
+				            <th>  Id  </th>
+				            <th> Price </th>
+				            <th> Remain Btc </th>
+				            <th> Minner </th>
+				            <th> Speed </th>
+				            <th> Limit </th>
+				            <th> Auto </th>
+				            </tr>
+				        </table>
+
+					</div><br>
+					<input type="text" id='commandId' placeholder="Command Id" size="11">
+					<button  class="button" onclick="setCommandId()">Set Command Id</button><br>
+				</div>
+
+				<p>Balance: </p>
+				<ul>
+					<li><input type="text" id='inputWallet' placeholder="Zcash Wallet Address">
+						<button class="button" onclick="setWalletAdress()">Set Wallet Address</button>
+					</li>
+					<li>Immature Balance: <br>
+						<label id="zec"> 0 </label> zec =
+						<label id="zectobtc"> 0 </label> btc
+					</li>
+					<li>Unpaid Balance: <br>
+						<label id="zecUnpay"> 0 </label> zec =
+						<label id="zectobtcUnpay"> 0 </label> btc
+					</li>
+					<li>Total: <br>
+						<label id="total"> 0 </label> btc
+					</li>
+				</ul>
+
+				<p>Price: </p>
+				<ul>
+					<li><label>btc: </label> <label id="btc"></label></li>
+					<li><label>usd: </label> <label id="usd"></label> </li>
+					<li>
+						<input type="text" id='zecToConvert' placeholder="Zec amount" size="10"> zec = 
+						<label id="btcAmount"> 0 </label> btc <br>
+						<button class="button" onclick="convertToBtc()">Convert</button>
+					</li>
+				</ul>
+
+				<p>Pool status: </p>
+				<ul>
+					<li><label>hashRate: </label> <label id="hashRate"></label></li>
+					<li><label>miners: </label> <label id="miners"></label> </li>
+					<li><label>workers: </label> <label id="workers"></label> </li>
+					<li><label>blocksPerHour: </label> <label id="blocksPerHour"></label> </li>
+				</ul>
+
+
+			</div>
+
+		</div>
+
+
+
+					<script type="text/javascript">
+						var currentUrl =  window.location.href;
+
+						if (currentUrl.includes("localhost")){
+
+							httpGetAsync("config.json", function(response) {
+
+								var json = JSON.parse(response);
+								document.getElementById("inputApiId").value =  json["apiId"];
+								document.getElementById("inputApiKey").value = json["apiKey"];
+								document.getElementById("inputWallet").value = json["wallet"];
+
+							});
+
+						}
+
+						if (!currentUrl.includes("localhost") && !currentUrl.includes("startv.vn")){
+							document.getElementById("commandInfo").style.display = 'none';
+						}
+
+					</script>
+
+					<script src="https://unpkg.com/notie"></script>
+
+				</body>
+
+				</html>

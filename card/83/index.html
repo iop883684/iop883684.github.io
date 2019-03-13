@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>!!^^</title>
+	 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>var ml = { timelines: {}};</script>
+</head>
+
+<style type="text/css">
+
+body, html {
+  height: 100%;
+}
+
+
+div {
+
+	/*top: 50%;*/
+	height:100%;
+	width:100%;
+	background-image: url("bg.jpg");
+	background-color: #ffe6e6;
+
+	background-repeat: no-repeat;
+	/*background-size: 100% 100%;*/
+	background-size: contain;
+	/*background-size: cover;*/
+	background-position: 0% 50% ;  
+	/*display: inline;*/
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bgimg
+    {
+        font-family:    "Trebuchet MS", Helvetica, sans-serif;
+        font-size:      40px;
+        font-weight:    bold;
+        color:  white;
+
+    }
+
+    .ml2 {
+    margin-top:205px;
+    display:inline-block;
+}
+
+</style>
+
+<body >
+
+	<div class="bgimg">
+		<p> </p>
+		<p> </p>
+		<p> </p>
+
+		<label class="ml2">
+			
+			Chúc bé Mập một ngày 8/3 <br>thật là ý nghĩa, vui tươi <br> ngập tràn hạnh phúc
+		</label>
+		
+
+	</div>
+
+
+<script>
+// Wrap every letter in a span
+$('.ml2').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+ml.timelines["ml2"] = anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: function(el, i) {
+      return 70*i;
+    }
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+</body>
+</html>

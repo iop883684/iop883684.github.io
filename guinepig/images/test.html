@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  
+	
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="gpm.css"/>
+  <link rel="stylesheet" type="text/css" href="jqm.css"/>
+
+  <script type="text/javascript" src="jq.js"></script>
+  <script type="text/javascript" src="jqm.js"></script>
+    <!-- <script type="text/javascript" src="gpm.js"></script> -->
+</head>
+
+<body >
+		
+
+	<div id="content">
+		<div id="submenu">
+		
+		</div>
+	<h2>Test Your Knowledge</h2>
+		<script type="text/javascript" >
+			
+
+var qs = [
+{q:"What is the average guinea pig Life Expectancy?",
+a:["8 years", "2 years", "17 years", "15 years", "132 years"]},
+{
+q:"Guinea pigs hide their signs of illness because they are prey animals.",
+a:["True", "False"]
+},
+
+{q: "Which of the following must be available 24/7 to your guinea pig:",
+a:["Grass Hay", "Fruits", "Milk", "Beer", "Smartphone" ]},
+
+{q :"Rabbit pellets are suitable long-term replacement in cases when guinea pig pellets are not available.",
+a:["False", "True"]},
+
+{q: "Cedar is a good, economical choice for a bedding material.",
+a:["False", "True"]},
+
+{q:"When cleaning the guinea pig cage, It is okay from time to time to pour vinegar or citric acid on the guinea pig cage floor, in order to remove calcium deposits.",
+a:["True", "False"]},
+
+{q:"I should be really concerned if the heart rate of my guinea pig is about 300 beats per minute!",
+a:["False", "True"]},
+
+{q:"My guinea pig has an excellent sense of depths/heights, so it is safe to put him/her on the elevated surfaces without surveillance.",
+a:["False", "True"]},
+
+
+{q:"Least possible cause of excess water consumption in guinea pigs is:",
+a:["Boredom", "Diabetes", "Hunger", "Pain", "Kidney Failure"]},
+
+
+{q:"Guinea pigs eat their own droppings. It is normal.",
+a:["True", "False"]},
+
+{q:"How do you pick up your guinea pig?",
+a:["Place one hand under the guinea pigs chest (just behind the front feet) and use your other hand to support its hindquarters.", "Place both hands to support guinea pigs abdomen.", "Grab it by the hinder legs and yank it out quickly before it escapes.",
+"Give it a lot of food until it tires and falls asleep. Then grab it by the both hands and pick it up."]},
+
+{q:"Even after years of time spent together, my guinea pig is still running away from me when I try to pick it up. This means:",
+a:["that as a prey animal, this is completely normal behavior for a guinea pig.", "that I am a bad caretaker :(", "that my guinea pig simply doesn't like me and my career choice :("]},
+
+{q:"When I stroke my guinea pig's head and it tosses head up in the air, it means it likes what I am doing and wishes me to keep it up.", a:["False", "True"]},
+
+{q:"Where are guinea pigs from?", 
+a:["From South America.", "From Guinea, where else?", "From Africa.", "From North America.", "From Australia, it is obvious." ,"From The Twelve Colonies of Kobol.", "From Croatia.", "From a pet store."]},
+
+{q:"Guinea pig is a species of:",
+a:["rodents.","reptiles.","birds.","arachnids.","muppets."]
+},
+{q:"Guinea pig as a pet is:",
+a:["relatively not demanding, responsive, peaceful in nature.","very demanding, expensive, asking for constant attention and jealous.","loud, aggressive, sneaky and bloodthirsty.","trapped in five dimensions of space."]
+},
+
+{q:"Hamster wheel is a great way for your guinea pig to exercise and to stay healthy.",
+a:["False", "True"]
+},
+
+{q:"When feeding apple to the guinea pig, we must remove apple seeds because they contain:",
+a:["Cyanide.", "Adamantium.","Calcium.","Radioactive isotopes", "Mercury"]
+},
+
+{q:"Guinea pig's teeth are continuously growing throughout life.",
+a:["True","False"]
+},
+{q:"Are you regularly trimming your guinea pig's nails?",
+a:["Yup, indeed I do.", "Trimming? Nails?","No, this is not recommended because it could cause bloat."]
+},
+{q:"You are walking through the garden, minding your own business, when you suddenly find this rhubarb plant on the way. You immediately think of your pet: this could be a great way to provide necessary variety in its diet. You take it and give it to your guinea pig.",
+a:["False", "True"]
+},
+{q:"I think my guinea pig never sleeps. Something is wrong!",
+a:["False", "True"]
+},
+{q:"How many teeth do guinea pigs have?",
+a:["20", "25", "8", "4", "37"]
+},
+
+{q:" Guinea pigs enjoy hot summer days and sunlight.",
+a:["False", "True"]
+},
+{q:" If in direct contact with warm water, guinea pigs tend to multiply themselves into evil guinea pig clones.",
+a:["False", "True"]
+},
+{q:"Cavies like smaller cages because they provide them feelings of security.",
+a:["False", "True"]
+},
+
+{q:"Guinea pigs are excellent swimmers.",
+a:["Yep, they really can swim.", "Swimmers, right. I've also heard they can hover when meditating."]
+},
+{q:"Pellets are excellent substitution for hay. ",
+a:["False", "True"]
+},
+{q:"Choose the adequate substitute for hay:",
+a:["None of the mentioned.", "Pellets.", "Water.", "Vitamin C.", "Cheeseburger.", "Adamantium."]
+},
+{q:"If working everyday with extreme determination and patience, you can learn your guinea pig to talk human words.  ",
+a:["False","True"]
+},
+
+{q:" Leash is a great tool for taking your cavy for a walk.",
+a:["So very wrong","So true"]
+},
+{q:"Guinea pigs in general like to be fed and left alone. They are very independent animals. ",
+a:["Nope, I think it wants to hang out with me.", "Yep, I just throw the food in the cage and run away before it gets agitated."]
+},
+{q:"Because they are firm sleepers, it is considered good practice to inject some coffee into guinea pig's water supply in the morning. ",
+a:["Erm, no.","Indeed, then my cavy and I have additional caffeine bonding time."]
+}
+
+
+	
+
+
+];
+
+
+var numQuestions = 5;
+var step = 0;
+var correct = 0;
+var runningQuestions;
+
+
+function getRandomQuestionsFromArray() {
+	var ret = [];
+	while(ret.length < numQuestions) {
+		var r=Math.floor(Math.random()*qs.length);
+		q = qs[r];
+		if (ret.indexOf(q) == -1) {
+			ret.push(q);
+		}	
+	}
+
+	return ret;
+}
+
+function generateForm(question) {
+	s = '<ul id="qs" data-role="listview"  ><li data-theme="a">' + question.q + "</li>";	
+	var spentAnswers = [];
+	//for (i = 0; i < question.a.length; i++) {
+	while(spentAnswers.length < question.a.length) {
+		var r=Math.floor(Math.random()*question.a.length);
+		answer = question.a[r];
+		
+		
+		if (spentAnswers.indexOf(answer) == -1) {
+			spentAnswers.push(answer);
+			s += '<li><a class="answer" style="white-space:normal" data-value="' + r + '">' + answer + '</a></li>';
+		}	
+	}
+
+	return s;
+}
+
+function startQuiz() {
+	$('#qo').hide();
+	runningQuestions = getRandomQuestionsFromArray();
+	step = 0;
+	correct = 0;
+	nextQuestion();
+}
+
+function nextQuestion() {	
+	if (step < numQuestions) {
+		forma = "Question " + (step + 1) + " of " + numQuestions + "</br>";
+		forma += generateForm(runningQuestions[step]);
+		//forma += "<input type='button' onclick='nextQuestion()' value='next'/>";	
+		print(forma);		
+		step++;
+	} else {
+		
+		s = "<strong>You had " + correct + "/" + numQuestions + " correct.</strong>";
+
+		print(s);
+		$('#qo').show();
+	}
+	$('#qs').listview();
+}
+
+function print(nesto) {
+	document.getElementById('quiz').innerHTML=nesto;
+}
+
+
+$(document).undelegate('.answer', 'click').delegate('.answer', 'click', function(e) {	
+	
+	if ($(this).data('value') == 0) {
+		correct++;	
+	}
+	nextQuestion();
+	e.preventDefault();
+});
+
+
+
+		</script>
+	</head>
+	<body>	
+		
+		
+<input type="button" value="Start new test" onclick="startQuiz()"/>
+		<div id="quiz">
+		</div>
+		<div style="width:250px;margin: 10px auto;display:none" id="qo">
+		<br/><br/>
+		<img src="slike/test-mobile.png" alt="guineapigmanual.com"/>
+		</div>
+	</body>
+
+</html>

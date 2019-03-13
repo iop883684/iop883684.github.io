@@ -1,0 +1,137 @@
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 120px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .sectionhead {
+        padding: 0 75px;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 980px) {
+    body {
+        text-align: center;
+    }
+    h1 {
+        font-size: 110px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .santa {
+        margin-right: -170px;
+        overflow: hidden;
+    }
+    .sectionhead {
+        padding: 0;
+    }
+}
+
+/* Smaller Devices */
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 95px;
+    }
+    h3 {
+        font-size: 16px;
+        margin: 0px;
+    }
+    #hero {
+        height: 500px;
+    }
+    .santa {
+        margin-right: -70px;
+    }
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 640px) {
+    .sticky-container,
+    .ribon,
+    .santa {
+        display: none;
+    }
+    h1 {
+        font-size: 75px;
+    }
+    h3 {
+        font-size: 13px;
+        margin: 0px;
+    }
+    #hero {
+        height: 360px;
+    }
+    #hero .container {
+        padding-top: 30px;
+    }
+    #hero p {
+        padding-top: 60px;
+    }
+    .bigbell {
+        height: 160px;
+        margin-top: -25px;
+    }
+}
+
+/* Smaller Mobile Devices */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 12px;
+        margin: 0px;
+    }
+    .sectionhead p {
+        font-size: 14px;
+    }
+    #hero {
+        height: 320px;
+    }
+    #hero .btn {
+        margin-top: 10px;
+    }
+    .logo {
+        font-size: 28px;
+    }
+}
+
+/* Even Smaller Mobile Devices */
+@media only screen and (max-width: 360px) {
+    h1 {
+        font-size: 50px;
+    }
+    #hero .container {
+        padding-top: 50px;
+    }
+    .bigbell {
+        margin-top: -50px;
+    }
+}
+
+/* Smallest Mobile Devices */
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    #hero p {
+        padding-top: 40px;
+    }
+    #overview {
+        padding-top: 50px;
+    }
+    .bigbell {
+        margin-top: -30px;
+    }
+}
