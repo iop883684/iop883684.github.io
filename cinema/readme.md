@@ -1,5 +1,5 @@
 <p align="center">
-<h3 align="center">Coto Cinema Quiz</h3>
+<h3 align="center"> Cinema Box</h3>
 </p>
 
 ---
