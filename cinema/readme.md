@@ -8,6 +8,7 @@ Test your cinema knowledge,
 
 <p align="center">
 <img src="demo.png" width="250" height="445">
+<img src="demo1.png" width="250" height="445">
 </p>
 
 ### Description:
