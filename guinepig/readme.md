@@ -35,7 +35,7 @@ This is friendly and concise (and fun) Guinea Pig Instructions Manual,
 * [Healh](https://iop883684.github.io/guinepig/images/health.html)
 
 ### Download
-[![App Store Button](http://imgur.com/y8PTxr9.png "App Store Button")](https://itunes.apple.com/app/id1454532251)
+[![App Store Button](http://imgur.com/y8PTxr9.png "App Store Button")](https://itunes.apple.com/app/id1456803881)
 [![Play Store Button](http://imgur.com/utWa1co.png "Play Store Button")](https://play.google.com/store/apps/details?id=com.dolh.guineapig)
 
 ### Contact us:
