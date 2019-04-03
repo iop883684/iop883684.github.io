@@ -1,5 +1,5 @@
 <p align="center">
-<h3 align="center">Coto Cinema Quiz</h3>
+<h3 align="center"> Cinema Box</h3>
 </p>
 
 ---
@@ -8,6 +8,7 @@ Test your cinema knowledge,
 
 <p align="center">
 <img src="demo.png" width="250" height="445">
+<img src="demo1.png" width="250" height="445">
 </p>
 
 ### Description:
