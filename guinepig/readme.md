@@ -25,14 +25,6 @@ This is friendly and concise (and fun) Guinea Pig Instructions Manual,
 - guinea pig care test with random questions for the evaluation of your knowledge
 - guinea pig wallpapers
 
-### Quick Guild:
-
-* [Quick](https://iop883684.github.io/guinepig/images/quick.html)
-* [Sound](https://iop883684.github.io/guinepig/images/sound.html)
-* [Bedding](https://iop883684.github.io/guinepig/images/beding.html)
-* [Cage](https://iop883684.github.io/guinepig/images/cages.html)
-* [Eating](https://iop883684.github.io/guinepig/images/eating.html)
-* [Healh](https://iop883684.github.io/guinepig/images/health.html)
 
 ### Download
 [![App Store Button](http://imgur.com/y8PTxr9.png "App Store Button")](https://itunes.apple.com/app/id1456803881)
@@ -40,6 +32,6 @@ This is friendly and concise (and fun) Guinea Pig Instructions Manual,
 
 ### Contact us:
 
-Get in touch with me for support via: iop883684@gmail.com
+Get in touch with me for support via: [Messenger](https://m.me/416305462459391)
 
 
