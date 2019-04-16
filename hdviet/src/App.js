@@ -31,7 +31,7 @@ export default class App extends Component {
 
     this.setState({ isLoading: true });
 
-    const url = `http://movies.hdviet.com/tim-kiem-nhanh.html?keyword=hay`
+    const url = `http://movies.hdviet.com/tim-kiem-nhanh.html?keyword=trans`
     
     console.log(url)
 
@@ -124,10 +124,17 @@ export default class App extends Component {
           {this.currentItem &&
             
 
-          <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            
-            <ReactPlayer url={this.playUrl} playing controls/>
-          
+          <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} >
+
+            <ModalHeader color={{backgroundColor:'black'}} toggle={this.toggle}> {this.currentItem.MovieName} </ModalHeader>
+            <ModalBody style={{backgroundColor:'black'}}>
+            <ReactPlayer url={this.playUrl} width={468}  playing controls/>
+            </ModalBody>
+            <ModalFooter>
+            <Button color="success" onClick={this.toggle}>Open JWPlayer</Button>{' '}
+            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+            </ModalFooter>
+
           </Modal>
           
           }
