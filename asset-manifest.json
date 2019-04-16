@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.b35e439c.chunk.css",
-  "main.js": "/static/js/main.84f465d6.chunk.js",
-  "main.js.map": "/static/js/main.84f465d6.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/css/2.8691967d.chunk.css": "/static/css/2.8691967d.chunk.css",
-  "static/js/2.d379d675.chunk.js": "/static/js/2.d379d675.chunk.js",
-  "static/js/2.d379d675.chunk.js.map": "/static/js/2.d379d675.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.3c7ea888891dd379738079e41c75e2b7.js": "/precache-manifest.3c7ea888891dd379738079e41c75e2b7.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/2.8691967d.chunk.css.map": "/static/css/2.8691967d.chunk.css.map",
-  "static/css/main.b35e439c.chunk.css.map": "/static/css/main.b35e439c.chunk.css.map"
+  "main.css": "/hdviet/static/css/main.b35e439c.chunk.css",
+  "main.js": "/hdviet/static/js/main.3d2a8a28.chunk.js",
+  "main.js.map": "/hdviet/static/js/main.3d2a8a28.chunk.js.map",
+  "runtime~main.js": "/hdviet/static/js/runtime~main.e9037698.js",
+  "runtime~main.js.map": "/hdviet/static/js/runtime~main.e9037698.js.map",
+  "static/css/2.8691967d.chunk.css": "/hdviet/static/css/2.8691967d.chunk.css",
+  "static/js/2.d379d675.chunk.js": "/hdviet/static/js/2.d379d675.chunk.js",
+  "static/js/2.d379d675.chunk.js.map": "/hdviet/static/js/2.d379d675.chunk.js.map",
+  "index.html": "/hdviet/index.html",
+  "precache-manifest.54a5d490d3c3d282f7e4fc5165ddbeca.js": "/hdviet/precache-manifest.54a5d490d3c3d282f7e4fc5165ddbeca.js",
+  "service-worker.js": "/hdviet/service-worker.js",
+  "static/css/2.8691967d.chunk.css.map": "/hdviet/static/css/2.8691967d.chunk.css.map",
+  "static/css/main.b35e439c.chunk.css.map": "/hdviet/static/css/main.b35e439c.chunk.css.map"
 }
