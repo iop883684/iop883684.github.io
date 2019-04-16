@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import MovieItem from './MovieItem'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import {PropTypes} from 'prop-types';
-import Fade from 'react-transition-group/Transition';
 
 export default class App extends Component {
 
@@ -19,6 +17,7 @@ export default class App extends Component {
     };
 
     this.toggle = this.toggle.bind(this);
+    this.currentItem = null;
 
   }
 
@@ -57,6 +56,7 @@ export default class App extends Component {
 
   onClickItem(item){
     console.log(item.MovieID)
+    this.currentItem = item
     this.setState({modal:true})
   }
 
@@ -92,77 +92,30 @@ export default class App extends Component {
               )
             }
           </div>
+          {this.currentItem &&
+            
 
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+            <ModalHeader toggle={this.toggle}>{this.currentItem.MovieName}</ModalHeader>
             <ModalBody>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              
+              <video id="samp"  controls>
+                    <source src = "http://freeb.hdviet.com/80d4f85dad54daff5019d454788c91c8/s8/102015/21/v_h_s_2012_bluray_1080p_dts_x264_chd/playlist_m.m3u8" type="application/x-mpegURL" >
+                        {/* Your browser does not support this video format. */}
+                    </source>
+                </video>
             </ModalBody>
             <ModalFooter>
-              <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
+              <Button color="success" onClick={this.toggle}>Open</Button>{' '}
               <Button color="secondary" onClick={this.toggle}>Cancel</Button>
             </ModalFooter>
           </Modal>
+          
+          }
+
 
       </div>
     );
   }
 }
 
-
-Modal.propTypes = {
-  // boolean to control the state of the popover
-  isOpen:  PropTypes.bool,
-  autoFocus: PropTypes.bool,
-  // if modal should be centered vertically in viewport
-  centered: PropTypes.bool,
-  // corresponds to bootstrap's modal sizes, ie. 'lg' or 'sm'
-  size: PropTypes.string,
-  // callback for toggling isOpen in the controlling component
-  toggle:  PropTypes.func,
-  role: PropTypes.string, // defaults to "dialog"
-  // used to reference the ID of the title element in the modal
-  labelledBy: PropTypes.string,
-  keyboard: PropTypes.bool,
-  // control backdrop, see http://v4-alpha.getbootstrap.com/components/modal/#options
-  backdrop: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.oneOf(['static'])
-  ]),
-  // if body of modal should be scrollable when content is long
-  scrollable: PropTypes.bool,
-  // allows for a node/component to exist next to the modal (outside of it). Useful for external close buttons
-  // external: PropTypes.node,
-  // called on componentDidMount
-  onEnter: PropTypes.func,
-  // called on componentWillUnmount
-  onExit: PropTypes.func,
-  // called when done transitioning in
-  onOpened: PropTypes.func,
-  // called when done transitioning out
-  onClosed: PropTypes.func,
-  className: PropTypes.string,
-  wrapClassName: PropTypes.string,
-  modalClassName: PropTypes.string,
-  backdropClassName: PropTypes.string,
-  contentClassName: PropTypes.string,
-  // boolean to control whether the fade transition occurs (default: true)
-  fade: PropTypes.bool,
-  cssModule: PropTypes.object,
-  // zIndex defaults to 1000.
-  zIndex: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.string,
-  ]),
-  // backdropTransition - controls backdrop transition
-  // timeout is 150ms by default to match bootstrap
-  // see Fade for more details
-  backdropTransition: PropTypes.shape(Fade.propTypes),
-  // modalTransition - controls modal transition
-  // timeout is 300ms by default to match bootstrap
-  // see Fade for more details
-  modalTransition: PropTypes.shape(Fade.propTypes),
-  innerRef: PropTypes.object,
-  // if modal should be destructed/removed from DOM after closing
-  unmountOnClose: PropTypes.bool // defaults to true
-}
