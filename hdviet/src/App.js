@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MovieItem from './MovieItem'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import ReactPlayer from 'react-player'
 
 export default class App extends Component {
 
@@ -13,11 +14,12 @@ export default class App extends Component {
       isError: '',
       results: [],
       searchText: '',
-      modal: false
+      modal: false,
     };
 
     this.toggle = this.toggle.bind(this);
     this.currentItem = null;
+    this.playUrl = ''
 
   }
 
@@ -54,10 +56,37 @@ export default class App extends Component {
       });
   };
 
+  getPlayUrl = async () => {
+
+
+    const url = `http://movies.hdviet.com/get_movie_play_json?movieid=${this.currentItem.MovieID}&sequence=1`
+    
+    console.log(url)
+
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        console.log('res:', data);
+        this.playUrl = data.data.playList
+        this.setState({
+          modal:true
+        });
+
+      })
+      .catch(error => {
+        console.log(error);
+        this.setState({
+              isLoading: false,
+              isError: error
+            });
+      });
+  };
+
+
   onClickItem(item){
     console.log(item.MovieID)
     this.currentItem = item
-    this.setState({modal:true})
+    this.getPlayUrl()
   }
 
   toggle() {
@@ -96,19 +125,9 @@ export default class App extends Component {
             
 
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}>{this.currentItem.MovieName}</ModalHeader>
-            <ModalBody>
-              
-              <video id="samp"  controls>
-                    <source src = "http://freeb.hdviet.com/80d4f85dad54daff5019d454788c91c8/s8/102015/21/v_h_s_2012_bluray_1080p_dts_x264_chd/playlist_m.m3u8" type="application/x-mpegURL" >
-                        {/* Your browser does not support this video format. */}
-                    </source>
-                </video>
-            </ModalBody>
-            <ModalFooter>
-              <Button color="success" onClick={this.toggle}>Open</Button>{' '}
-              <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-            </ModalFooter>
+            
+            <ReactPlayer url={this.playUrl} playing controls/>
+          
           </Modal>
           
           }
