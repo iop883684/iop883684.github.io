@@ -22,6 +22,6 @@ Hope you feel more comfortable, excited and enjoy the feeling of comfort.
 
 ### Contact us:
 
-Get in touch with me for support via: iop883684@gmail.com
+Get in touch with me for support via: [Messenger](https://m.me/416305462459391)
 
 
