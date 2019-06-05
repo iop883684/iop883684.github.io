@@ -27,7 +27,7 @@ This is friendly and concise (and fun) Guinea Pig Instructions Manual,
 
 
 ### Download
-[![App Store Button](http://imgur.com/y8PTxr9.png "App Store Button")](https://itunes.apple.com/app/id1456803881)
+[![App Store Button id1456803881](http://imgur.com/y8PTxr9.png "App Store Button")](https://itunes.apple.com/app/id1454532251)
 [![Play Store Button](http://imgur.com/utWa1co.png "Play Store Button")](https://play.google.com/store/apps/details?id=com.dolh.guineapig)
 
 ### Contact us:
