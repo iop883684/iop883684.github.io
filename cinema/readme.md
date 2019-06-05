@@ -29,6 +29,6 @@ https://www.themoviedb.org/documentation/api/terms-of-use
 
 ### Contact us:
 
-Get in touch with me for support via: iop883684@gmail.com
+Get in touch with me for support via: [Messenger](https://m.me/416305462459391)
 
 
