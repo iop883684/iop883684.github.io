@@ -4,16 +4,16 @@
 
 ---
 
-Test your cinema knowledge, 
+Make movie plan
 
 <p align="center">
-<img src="demo.png" width="250" height="445">
-<img src="demo1.png" width="250" height="445">
+<img src="demo.jpg" width="250" height="445">
+<img src="demo1.jpg" width="250" height="445">
+<img src="demo2.jpg" width="250" height="445">
 </p>
 
 ### Description:
-This app support user test your cinema knowledge, to make user more interesting and easy to receive new data.
-It will be more fun if you play with friends and do some challenges.
+You ever had the argument with your friends on what movie to watch. Our app will help you solve that problem.
 
 
 
