@@ -7,9 +7,9 @@
 Make movie plan
 
 <p align="center">
-<img src="demo.jpg" width="250" height="445">
-<img src="demo1.jpg" width="250" height="445">
-<img src="demo2.jpg" width="250" height="445">
+<img src="demo.jpg" width="250" height="541">
+<img src="demo1.jpg" width="250" height="541">
+<img src="demo2.jpg" width="250" height="541">
 </p>
 
 ### Description:
