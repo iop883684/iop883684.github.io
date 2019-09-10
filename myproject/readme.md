@@ -16,5 +16,5 @@
 ## My Project
 [Personal App](https://itunes.apple.com/vn/developer/le-do/id1198735180?mt=8)
 
-Those are recent projects which I did by my self.  
-Other co-operative freelance project was not list here.
+Those are recent projects which I did alone.  
+Other old project or co-operative freelance project was not list here.
