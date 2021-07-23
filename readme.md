@@ -3,7 +3,7 @@
 * [Lịch trực nhật](http://iop883684.github.io/pickme)
 * [Thiệp giáng sinh](https://iop883684.github.io/card)
 * [ZCash status](https://iop883684.github.io/block)
-* [Guinea Pig](https://iop883684.github.io/guinepig/)
+* [Guinea Pig](https://iop883684.github.io/guineapig/)
 * [My App](https://iop883684.github.io/myproject/)
 
 ### Hướng dẫn
